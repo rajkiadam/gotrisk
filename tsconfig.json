@@ -14,7 +14,29 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "player": [
+        "dist/player/player",
+        "dist/player"
+      ],
+      "money": [
+        "dist/money/money",
+        "dist/money"
+      ],
+      "unit": [
+        "dist/unit/unit",
+        "dist/unit"
+      ],
+      "map": [
+        "dist/map/map",
+        "dist/map"
+      ],
+      "area": [
+        "dist/area/area",
+        "dist/area"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

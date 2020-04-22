@@ -1,0 +1,51 @@
+<div class="table">
+    <div class="row">        
+        <div class="col-6">
+            Lets create a Game!
+        </div>
+        <div class="col-6">
+            Join a game!
+        </div>
+    </div>
+    <div class="row">        
+        <div class="col-6">
+            Set the number of players
+        </div>
+        <div class="col-6">
+            Enter the GameID:
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <input type="number" [(ngModel)]="numberOfPlayers" min="2" max="5" />
+        </div>
+        <div class="col-6">
+            <input type="text" [(ngModel)]="gameIdJoin" />
+        </div>
+    </div>
+    <div class="row">        
+        <div class="col-6">
+            <button (click)="createGame()" >Start the game!</button>
+        </div>
+        <div class="col-6">
+            <button (click)="joinGame(0)" >Join the game as Player 0!</button>
+        </div>
+        <div class="col-6">
+            <button (click)="joinGame(1)" >Join the game as Player 1!</button>
+        </div>
+        <div class="col-6">
+            <button (click)="joinGame(2)" >Join the game as Player 2!</button>
+        </div>
+        <div class="col-6">
+            <button (click)="joinGame(3)" >Join the game as Player 3!</button>
+        </div>
+        <div class="col-6">
+            <button (click)="joinGame(4)" >Join the game as Player 4!</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6" *ngIf="gameIdCreated">
+            Here is your GameID: {{gameIdCreated}}
+        </div>
+    </div>
+</div>
