@@ -22,8 +22,8 @@ export class LobbyComponent {
   // id of the player
   playerID: number
   // base url for the hosted game !! WARNING !! should be replaced to local testing
-  baseUrl: string = "http://84.236.29.86:8000/games/GoT-Risk" // port forwarded test server
-  //baseUrl: string = "http://localhost:8000/games/GoT-Risk" // local test server 
+  //baseUrl: string = "http://84.236.29.86:8000/games/GoT-Risk" // port forwarded test server
+  baseUrl: string = "http://localhost:8000/games/GoT-Risk" // local test server 
 
   /**
    * Ctor

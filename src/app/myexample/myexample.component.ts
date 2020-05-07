@@ -26,7 +26,7 @@ export class MyexampleComponent {
   config = {
     game: GoTGame, 
     board: MyBoardComponent, 
-    multiplayer: SocketIO({ server: 'http://84.236.29.86:8000' })
+    multiplayer: SocketIO({ server: 'http://localhost:8000' }) // http://84.236.29.86:8000' })
   };
 
   /**
